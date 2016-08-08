@@ -12,6 +12,8 @@
 		5554D3941CE595E80093CE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5554D3921CE595E80093CE37 /* Main.storyboard */; };
 		5554D3961CE595E80093CE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5554D3951CE595E80093CE37 /* Assets.xcassets */; };
 		5554D3991CE595E80093CE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5554D3971CE595E80093CE37 /* LaunchScreen.storyboard */; };
+		5554D3A11CE5A3D90093CE37 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5554D3A01CE5A3D90093CE37 /* Minecraft.ttf */; };
+		55C4EFA21CE6B7C1008A0185 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55C4EFA11CE6B7C1008A0185 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5554D3951CE595E80093CE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5554D3981CE595E80093CE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5554D39A1CE595E80093CE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5554D3A01CE5A3D90093CE37 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		55C4EFA11CE6B7C1008A0185 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +58,12 @@
 		5554D38D1CE595E80093CE37 /* retro-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				5554D3A01CE5A3D90093CE37 /* Minecraft.ttf */,
+				55C4EFA11CE6B7C1008A0185 /* btn.wav */,
 				5554D38E1CE595E80093CE37 /* AppDelegate.swift */,
 				5554D3901CE595E80093CE37 /* ViewController.swift */,
-				5554D3921CE595E80093CE37 /* Main.storyboard */,
 				5554D3951CE595E80093CE37 /* Assets.xcassets */,
+				5554D3921CE595E80093CE37 /* Main.storyboard */,
 				5554D3971CE595E80093CE37 /* LaunchScreen.storyboard */,
 				5554D39A1CE595E80093CE37 /* Info.plist */,
 			);
@@ -97,6 +103,7 @@
 					5554D38A1CE595E80093CE37 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3U46JYCW3H;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -123,8 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C4EFA21CE6B7C1008A0185 /* btn.wav in Resources */,
 				5554D3991CE595E80093CE37 /* LaunchScreen.storyboard in Resources */,
 				5554D3961CE595E80093CE37 /* Assets.xcassets in Resources */,
+				5554D3A11CE5A3D90093CE37 /* Minecraft.ttf in Resources */,
 				5554D3941CE595E80093CE37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,10 +259,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.quaschnick.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -261,10 +273,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.quaschnick.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -287,6 +302,7 @@
 				5554D39F1CE595E80093CE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
